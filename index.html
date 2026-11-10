@@ -27,12 +27,12 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="date"><strong>Personal Expense Tracker</strong><br>Effective date: 13 August 2026</p>
+    <p class="date"><strong>Personal Expense Tracker</strong><br>Effective date: 11 November 2026</p>
 
     <p>Personal Expense Tracker is an offline personal-finance utility. It does not create user accounts, display advertisements, use analytics or tracking SDKs, or transmit expense information to the developer or any server.</p>
 
     <h2>Information handled by the app</h2>
-    <p>The app stores transactions, budgets, categories, payment methods, notes, and appearance preferences entered by the user. This information remains in the app's private storage on the user's Android device.</p>
+    <p>The app stores transactions, budgets, recurring-expense rules, categories, payment methods, tags, notes, receipt photos, and preferences entered by the user. This information remains in the app's private storage on the user's Android device. Transactions and budgets are kept in a database that is encrypted with a key protected by the Android Keystore.</p>
 
     <h2>Collection and sharing</h2>
     <p>The developer does not collect, sell, rent, or share personal data through the app. The app does not contain advertising, analytics, social, authentication, or cloud-storage SDKs.</p>
@@ -40,11 +40,17 @@
     <h2>CSV import and export</h2>
     <p>Import occurs only when the user selects a CSV file through Android's system file picker. Export occurs only when the user selects Export Data and chooses a destination. An exported copy is then controlled by the destination or application selected by the user.</p>
 
+    <h2>App lock and notifications</h2>
+    <p>If the user turns on App lock, unlocking uses Android's own fingerprint, face, or screen-lock prompt. The app never receives or stores biometric data. Budget alerts and recurring-expense notices are generated locally on the device; the app asks for Android's notification permission for this purpose and works without it.</p>
+
+    <h2>Backups</h2>
+    <p>Backup files are created only when the user selects Create backup, turns on automatic backup and chooses a folder, or selects Share backup and picks an app (such as Google Drive or email) in Android's share sheet. Once shared, the copy is controlled by the app and account the user selected, not by this app. Backup files can be protected with a password chosen by the user. They are written to the location the user selects through Android's system file picker and are not sent anywhere by the app. Receipt photos are not included in backup files.</p>
+
     <h2>Retention and deletion</h2>
-    <p>Data remains on the device until the user deletes individual transactions, selects Clear All Data, clears the app's storage in Android settings, or uninstalls the app. Clear All Data removes transactions and budgets while retaining customized categories, payment methods, and appearance preferences.</p>
+    <p>Deleted transactions stay in Trash for 30 days and are then removed. Data remains on the device until the user deletes individual transactions, selects Clear All Data, clears the app's storage in Android settings, or uninstalls the app. Clear All Data removes transactions (including Trash), receipt photos, and budgets while retaining customized categories, payment methods, recurring rules, and appearance preferences.</p>
 
     <h2>Security</h2>
-    <p>Android's application sandbox protects local app data under normal device-security conditions. App data is excluded from Android cloud backup and device-to-device transfer. Users remain responsible for securing exported CSV copies and their devices.</p>
+    <p>Android's application sandbox protects local app data under normal device-security conditions. App data is excluded from Android cloud backup and device-to-device transfer. Users remain responsible for securing exported CSV and backup copies and their devices.</p>
 
     <h2>Children</h2>
     <p>The app is a general personal-finance utility intended for adults and is not specifically directed to children.</p>
